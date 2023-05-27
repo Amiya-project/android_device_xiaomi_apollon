@@ -25,6 +25,9 @@ PRODUCT_PACKAGES += \
     libmegface \
     libpiex_shim
 
+# Miui Camera
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
